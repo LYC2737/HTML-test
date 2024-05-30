@@ -4,12 +4,12 @@
         <title>WEB-1 - JavaScript</title>
         <meta charset="utf-8">
         <script>
-            function nightDayHandler(){
+            function nightDayHandler(self){
                 var target = document.querySelector('body');
-                if(this.value === 'night'){
+                if(self.value === 'night'){
                     target.style.backgroundColor='black';
                     target.style.color='white';
-                    this.value='day';
+                    self.value='day';
         
                 var alist = document.querySelectorAll('a');
                 var i = 0;
@@ -20,7 +20,7 @@
                 }else{
                     target.style.backgroundColor='white';
                     target.style.color='black';
-                    this.value='night';
+                    self.value='night';
 
                     var alist=document.querySelectorAll('a');
                     var i=0;
